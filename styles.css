@@ -5,10 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#main * {
-  outline: 1px solid rgb(214, 214, 214);
-}
-
 html,
 body {
   width: 100%;
@@ -34,7 +30,7 @@ body {
 
 #title {
   position: relative;
-  top: 20%;
+  top: 20.5%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
@@ -53,10 +49,100 @@ body {
 
 #main {
   width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(249, 249, 249);
 }
 
 #text-holder{
   font-size: 2rem;
   font-weight: 900;
   padding-left: 66px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+form {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-content {
+  width: 100%;
+  height: 90%;
+  padding-top: 20px;
+  padding-left: 66px;
+  box-shadow: 0px 10px 5px 0px rgb(61, 61, 61, 0.1);
+  background-color: rgb(254, 254, 254);
+}
+
+#form-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#input-holder {
+  display: flex;
+  height: 90%;
+  gap: 66px;
+}
+
+#left-column,
+#right-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#input-holder p {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: gray;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+}
+
+button {
+  width: 300px;
+  height: 66px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #596D48;
+  color: white;
+  margin: 50px 0 0 66px;
+  font-size: 1.2rem;
+}
+
+#alt-text {
+  margin-left: 66px;
+  margin-top: 40px;
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  border: 2px solid blue;
 }
