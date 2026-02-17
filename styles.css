@@ -2,7 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  outline: 1px solid pink;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main * {
+  outline: 1px solid rgb(214, 214, 214);
 }
 
 html,
@@ -49,4 +53,10 @@ body {
 
 #main {
   width: 65%;
+}
+
+#text-holder{
+  font-size: 2rem;
+  font-weight: 900;
+  padding-left: 66px;
 }
