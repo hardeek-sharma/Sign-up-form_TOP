@@ -1,61 +1,79 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold" rel="stylesheet">
-  <title>Sign Up Form</title>
-</head>
-<body>
-  <div id="sidebar">
-    <div id="title">
-      <img
-        src="https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
-      />
-      <span>ODIN</span>
-    </div>
-  </div>
-
-  <div id="main">
-    <div id="text-holder">
-      <p>
-        This is not a real online service! You know you need something<br>
-        like this in your life to help you realize your deepest dreams.<br> 
-        Sign up now to get started.
-      </p>
-      <p>You <em>know</em> you want to.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold"
+      rel="stylesheet"
+    />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="title">
+        <img
+          src="https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+        />
+        <span>ODIN</span>
+      </div>
     </div>
 
-    <form>
-      <div id="form-content">
-        <p id="form-title">Let's do this!</p>
-        <div id="input-holder">
-            <div id="left-column"> 
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" />
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" />
-          </div>
-          <div id="right-column">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" />
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" name="phone-number" />
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-            />
+    <div id="main">
+      <div id="text-holder">
+        <p>
+          This is not a real online service! You know you need something<br />
+          like this in your life to help you realize your deepest dreams.<br />
+          Sign up now to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+
+      <form>
+        <div id="form-content">
+          <p id="form-title">Let's do this!</p>
+          <div id="input-holder">
+            <div id="left-column">
+              <p>
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" />
+              </p>
+              <p>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </p>
+              <p>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+              </p>
+            </div>
+            <div id="right-column">
+              <p>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" />
+              </p>
+              <p>
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" id="phone-number" name="phone-number" />
+              </p>
+              <p>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  required
+                />
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <button type="submit">CREATE ACCOUNT</button>
-    </form>
-    <p id="alt-text">Already have an account? <a href="example.com">Log in</a></p>
-  </div>
-</body>
+        <button type="submit">CREATE ACCOUNT</button>
+      </form>
+      <p id="alt-text">
+        Already have an account? <a href="https://example.com">Log in</a>
+      </p>
+    </div>
+  </body>
 </html>
